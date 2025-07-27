@@ -275,7 +275,7 @@ function createExperienceSection() {
     const group = new THREE.Group();
     
     resumeData.experience.forEach((exp, index) => {
-        const cardGeometry = new THREE.BoxGeometry(50, 14, 1.5);
+        const cardGeometry = new THREE.BoxGeometry(30, 14, 1.5);
         const cardTexture = createTextTexture(`🏢 ${exp.company}\n\n👨‍💻 ${exp.position}\n📅 ${exp.duration}\n\n${exp.description}`, 40, '#e74c3c');
         const cardMaterial = new THREE.MeshLambertMaterial({ 
             map: cardTexture,
@@ -321,7 +321,7 @@ function createSkillsSection() {
         
         // Skill label
         const labelGeometry = new THREE.PlaneGeometry(14, 4);
-        const labelTexture = createTextTexture(`${skill.name}\n${skill.level}%`, 55, '#2ecc71');
+        const labelTexture = createTextTexture(`${skill.name}\n${skill.level}%`, 76, '#2ecc71');
         const labelMaterial = new THREE.MeshLambertMaterial({ 
             map: labelTexture,
             transparent: true,
