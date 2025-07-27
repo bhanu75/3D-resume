@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bhanu Tripathi - 3D Resume Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="floating-particles" id="particles"></div>
+  <div id="container"></div>
+
+  <div class="navigation">
+    <button class="nav-btn active" onclick="showSection('profile')">Profile</button>
+    <button class="nav-btn" onclick="showSection('experience')">Experience</button>
+    <button class="nav-btn" onclick="showSection('skills')">Skills</button>
+    <button class="nav-btn" onclick="showSection('education')">Education</button>
+    <button class="nav-btn" onclick="showSection('projects')">Projects</button>
+    <button class="nav-btn" onclick="showSection('contact')">Contact</button>
+  </div>
+
+  <div class="section-title" id="sectionTitle">My Profile</div>
+
+  <div class="controls">
+    <p>🖱️ Mouse: Rotate Camera</p>
+    <p>🎯 Click: Read Details</p>
+    <p>🔄 Navigation: Switch Sections</p>
+  </div>
+
+  <div class="click-hint">
+    <p>✨ Click on any card to see details!</p>
+    <p>🎯 Cards will animate and show info</p>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/controls/OrbitControls.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
